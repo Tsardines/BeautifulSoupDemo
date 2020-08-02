@@ -10,3 +10,6 @@ uClient.close()
 
 # does the html parsing
 page_soup = soup(page_html, "html.parser") # calling it "soup" is standard
+
+# grabs each product
+containers = page_soup.findAll("div",{"class":"item-container"})    
